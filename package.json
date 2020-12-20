@@ -1,5 +1,5 @@
 {
-  "name": "vue-blog-frontend",
+  "name": "llx-hwm-blog-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "ali-oss": "^6.11.2",
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
+    "element-ui": "^2.14.1",
+    "github-markdown-css": "^4.0.0",
+    "markdown-it": "^12.0.2",
+    "mavon-editor": "^2.9.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"

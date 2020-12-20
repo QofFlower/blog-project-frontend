@@ -1,20 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="backg">
+    <Music></Music>
+    <div id="app">
+      <meta name="referrer" content="no-referrer" />
+      <!-- 解决请求图片403问题 -->
+      <div id="nav"></div>
+      <router-view class="router-tag"/>
     </div>
-    <router-view/>
   </div>
 </template>
 
+<script>
+import Music from "./components/Music";
+export default {
+  components: {
+    Music,
+  },
+};
+</script>
+
+
 <style>
+#backg {
+  background-size: cover;
+  /* background-image: url(static/img/bg4.jpg); */
+  background-image: url(https://blog-hananoq.oss-cn-hangzhou.aliyuncs.com/bg/bg4.jpg);
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  max-width: 960px;
+  margin: 0 auto;
+  background-size: cover;
+  /* background-image: url(static/img/bg2.jpg); */
+  background-image: url(https://blog-hananoq.oss-cn-hangzhou.aliyuncs.com/bg/bg2.jpg);
+}
+
+.router-tag{
+  margin-bottom: 60px;
 }
 
 #nav {
